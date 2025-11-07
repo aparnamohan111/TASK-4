@@ -1,4 +1,5 @@
 /* ===== Global Reset ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ a {
 }
 
 /* ===== Navbar ===== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -33,6 +35,7 @@ a {
 }
 
 /* ===== Navbar Logo Image ===== */
+
 .logo-img {
   height: 40px;      
   width: auto;
@@ -60,6 +63,7 @@ a {
 
 /* ===== Hero Section ===== */
 /* === HERO SECTION (Updated) === */
+
 .hero {
   min-height: 100vh;
   background:url("./assets/hero.jpg");
@@ -143,10 +147,8 @@ a {
   transform: translateY(-3px);
 }
 
-
-
-
 /* Responsive */
+
 @media (max-width: 900px) {
   .hero-content {
     flex-direction: column-reverse;
@@ -168,6 +170,7 @@ a {
 
 
 /* ===== Sections ===== */
+
 .section {
   padding: 80px 6%;
   text-align: center;
@@ -178,6 +181,7 @@ a {
 }
 
 /* ===== Cards ===== */
+
 .section {
   text-align: center;
   padding: 60px 20px;
@@ -268,6 +272,7 @@ a {
 }
 
 /* 🌈 Unique gradients for each card */
+
 .card.ai {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
@@ -285,8 +290,74 @@ a {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
+/* ===industry===*/
+
+.section.light {
+  text-align: center;
+  padding: 60px 20px;
+  background: url("./assets/titlebar.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.section.light h1 {
+  font-size: 50px;
+  color: #050505;
+  margin-bottom: 40px;
+}
+
+.cardz {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  
+}
+
+.card1 {
+  background: linear-gradient(135deg, #f6d771 0%, #ead16e 100%);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 40px 20px;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card1:hover::before {
+  opacity: 1;
+}
+
+.card1 h3 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  z-index: 2;
+}
+
+
 
 /* ===== Contact Form ===== */
+
 .contact-form {
   max-width: 520px;
   margin: 24px auto 0;
@@ -319,6 +390,7 @@ a {
 }
 
 /* ===== Footer ===== */
+
 .footer {
   background: #0f172a;
   color: #f8fafc;
@@ -328,6 +400,7 @@ a {
 }
 
 /* ===== Responsive ===== */
+
 @media (max-width: 768px) {
   .hero h1 { font-size: 1.8rem; }
   .navbar nav { display: none; } /* simple collapse on small screens */
