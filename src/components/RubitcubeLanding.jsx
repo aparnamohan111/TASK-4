@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import titlebar from "../assets/titlebar.jpg";
+import contact from "../assets/contact.jpg";
+import about from "../assets/about.avif";
 
 export default function RubitcubeLanding() {
   return (
@@ -136,15 +138,37 @@ export default function RubitcubeLanding() {
 
 
 {/* About Section */}
-    <section id="about" className="section">
-        <h2>About Us</h2>
-        <p>Rubitcube is a Dubai-based IT and Multimedia company combining creativity and intelligence to deliver results.</p>
-    </section>
+   <section id="about" className="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h1>About Us</h1>
+      <h3>Who We Are</h3>
+      <p>Rubitcube is a Dubai-based IT and Multimedia solutions provider, combining technology, creativity, and intelligence to deliver impactful results.</p>
+      <p>We help businesses enhance brand value, boost online presence, and drive conversions through personalized strategies and digital innovation.</p>
+
+      <div className="philosophy">
+        <h3>Our Philosophy</h3>
+        <h5>Think. Solve. Innovate.</h5>
+        <p>It’s not just what we do — it’s who we are.</p>
+        <ul>
+          <li><strong>Think –</strong> The ones who think differently change the world. Question everything. Explore the impossible.</li>
+          <li><strong>Solve –</strong> Simplicity is genius. Break the problem. Find the answer. Make it effortless.</li>
+          <li><strong>Innovate –</strong> Don’t follow trends — create them. Build the future. Leave a mark.</li>
+        </ul>
+      </div>
+    </div>
+    <div className="about-image">
+            <img src={about} alt="about" className="about-image" />
+        </div>
+    </div>
+</section>
+
+
 
 {/* Contact Section */}
-    <section id="contact" className="section light">
-        <h2>Contact Us</h2>
-        <p>Email: <b>hello@rubitcube.com</b> | Location: <b>Dubai, UAE</b></p>
+    <section id="contact" className="contactus">
+        <h1>Contact Us</h1>
+        
         <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
